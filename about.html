@@ -1,0 +1,53 @@
+{% extends "layout.html"%}
+{% load static %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button class="active" data-bs-target="#demo" data-bs-slide="0"></button>
+                    <button class="active" data-bs-target="#demo" data-bs-slide="1"></button>
+                    <button class="active" data-bs-target="#demo" data-bs-slide="2"></button>
+                </div>
+                <div class="carousel-inner mt-5">
+                   <div class="carousel-item active">
+                       <img src="{% static 'image/1.jpg' %}" class="img img-fluid d-block w-100 " style="height: 550px;" alt="">
+                   </div>
+                   <div class="carousel-item">
+                       <img src="{% static 'image/2.jpg' %}" class="img img-fluid d-block w-100"  alt="">
+                   </div>
+                   <div class="carousel-item">
+                       <img src="{% static 'image/3.jpeg' %}" class="img img-fluid d-block w-100" alt="">
+                   </div>
+                   
+               </div>
+        </div>
+        </div>
+        <div class="col-sm-6 mt-5">
+            <div style="color: white;">
+                <h1 style="font-size:20px ;color: rgb(31, 86, 205);">About Weather Dashbord</h1>
+                <p style="color: rgba(0, 0, 0, 0.845);">Welcome to Weather Dashboard, your go-to source for accurate and up-to-date weather information. Our mission is to provide reliable weather forecasts and insights to help you plan your day with confidence. Whether you're checking the weather for your daily commute, planning a weekend getaway, or preparing for extreme weather conditions, Weather Dashboard has got you covered.</p>
+                    
+                <h2 style="font-size:20px ;color: rgb(48, 169, 221);">Our Features</h2>
+                   <ul><li style="font-size:20px ;color: rgb(207, 132, 47);"> Real-Time Weather Updates:</li><p style="color: rgba(0, 0, 0, 0.845);"> Get the latest weather information with real-time updates for any location.</p>
+                    <li style="font-size:20px ;color: rgb(207, 132, 47);">7-Day Forecasts:</li><p style="color: rgba(0, 0, 0, 0.845);"> Plan ahead with detailed 7-day weather forecasts, including temperature, humidity, wind speed, and more.</p>
+                    <li style="font-size:20px ;color: rgb(207, 132, 47);">Interactive Maps:</li> <p style="color: rgba(0, 0, 0, 0.845);">Visualize weather patterns and track storms with our interactive maps.</p>
+                    <li style="font-size:20px ;color: rgb(207, 132, 47);">Custom Alerts:</li><p style="color: rgba(0, 0, 0, 0.845);"> Stay informed with custom weather alerts for severe weather conditions.</p>
+                    <li style="font-size:20px ;color: rgb(207, 132, 47);">User-Friendly Interface:</li><p style="color: rgba(0, 0, 0, 0.845);"> Enjoy a clean and intuitive interface that's easy to navigate, whether you're on a desktop or mobile device.
+                    Our Mission</p>
+                   <p style="color: rgba(0, 0, 0, 0.845);">At Weather Dashboard, we believe that accurate weather information is essential for everyone. Our goal is to provide a service that not only delivers precise forecasts but also helps you make informed decisions to stay safe and enjoy your day to the fullest.
+                    </p></ul>
+            </div>
+           
+        </div>
+    </div>
+   </div>
+ 
+{% endblock %}
+
+  
+</body>
+</html>

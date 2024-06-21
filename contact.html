@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% load static %}
+
+
+
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 mt-4"><img src="{% static 'image/we5.jpg'%}" class="img img-fluid w-100" alt=""></div>
+        <div class="col-sm-6">
+            <div>
+                <h1 style="font-family: Agency FB;color: white;">Contact Page</h1>
+                <form action="" method="">
+                    <div class="mb-3">
+                        <input name="mobile" id="mobileid" class="form-control border-black border-3" type="tel" placeholder="Mobile Number:">
+                    </div>
+                    <div class="mb-3">
+                        <input name="email" id="emailid" class="form-control border-black border-3" type="email" placeholder="Email:">
+                    </div>
+                    <div class="mb-3">
+                        <a style="text-decoration: none;" textarea name="address" id="addressid" class="form-control border-3 border-black p-3" href="https://www.google.com/maps/@14.4779708,79.9528444,15z?entry=ttu"><span>GPS</span></a></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="address" id="addressid" class="form-control border-3 border-black"> Address</textarea>
+                    </div>
+                    
+                    
+                    <div class="mb-2">
+                        <button class="btn btn-success" type="submit">Submit</button>
+                        <button class="btn btn-danger text-white" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+               
+    </div>
+   </div>
+
+{% endblock %}
+
+    
+</body>
+</html>
