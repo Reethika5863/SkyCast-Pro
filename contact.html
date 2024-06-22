@@ -11,17 +11,38 @@
         <div class="col-sm-6 mt-4"><img src="{% static 'image/we5.jpg'%}" class="img img-fluid w-100" alt=""></div>
         <div class="col-sm-6">
             <div>
-                <h1 style="font-family: Agency FB;color: white;">Contact Page</h1>
-                <form action="" method="">
+                <h1 style="font-family: Agency FB;color: rgb(232, 18, 18);">Contact Page</h1>
+                <span>{{msg}}</span>
+                <form action="/docontact" method="">
                     <div class="mb-3">
                         <input name="mobile" id="mobileid" class="form-control border-black border-3" type="tel" placeholder="Mobile Number:">
                     </div>
                     <div class="mb-3">
                         <input name="email" id="emailid" class="form-control border-black border-3" type="email" placeholder="Email:">
                     </div>
+                    <!--
                     <div class="mb-3">
-                        <a style="text-decoration: none;" textarea name="address" id="addressid" class="form-control border-3 border-black p-3" href="https://www.google.com/maps/@14.4779708,79.9528444,15z?entry=ttu"><span>GPS</span></a></textarea>
-                    </div>
+                        <button style="text-decoration: none;" class="form-control border-3 border-black p-3" onclick="getLocation()"><span>GPS</span></button>
+
+                        <p id="demo"></p>
+
+                        <script>
+                            const x = document.getElementById("demo");
+
+                            function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+                            function showPosition(position) {
+                             x.innerHTML = "Latitude: " + position.coords.latitude + 
+                             "<br>Longitude: " + position.coords.longitude;
+                            }
+                        </script>
+                    </div> -->
                     <div class="mb-3">
                         <textarea name="address" id="addressid" class="form-control border-3 border-black"> Address</textarea>
                     </div>
@@ -33,9 +54,9 @@
                     </div>
                 </form>
             </div>
-               
+        </div>       
     </div>
-   </div>
+</div>
 
 {% endblock %}
 
